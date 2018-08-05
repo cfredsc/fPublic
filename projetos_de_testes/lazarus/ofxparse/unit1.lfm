@@ -1,0 +1,55 @@
+object Form1: TForm1
+  Left = 1440
+  Height = 509
+  Top = 128
+  Width = 1328
+  Caption = 'Form1'
+  ClientHeight = 509
+  ClientWidth = 1328
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '1.8.4.0'
+  object Button2: TButton
+    Left = 20
+    Height = 25
+    Top = 12
+    Width = 120
+    Caption = 'OFX parser'
+    OnClick = Button2Click
+    TabOrder = 0
+  end
+  object DBGrid1: TDBGrid
+    Left = 16
+    Height = 444
+    Top = 48
+    Width = 1296
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource1
+    TabOrder = 1
+  end
+  object OpenDialog1: TOpenDialog
+    left = 396
+    top = 52
+  end
+  object DataSource1: TDataSource
+    left = 882
+    top = 165
+  end
+  object MySQL56Connection1: TMySQL56Connection
+    Connected = False
+    LoginPrompt = False
+    DatabaseName = 'fPortfolio'
+    KeepConnection = False
+    Params.Strings = (
+      'Port=3306'
+    )
+    Password = 'cf@1Sc21'
+    UserName = 'fred'
+    HostName = '192.168.100.5'
+    Options = []
+    SkipLibraryVersionCheck = False
+    left = 736
+    top = 276
+  end
+end
